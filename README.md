@@ -42,9 +42,13 @@ window or tab.
 Updating
 --------
 
-Pull the latest changes and update submodules.
+Add sorin's repository as uptream
 
-    git pull && git submodule update --init --recursive
+    git remote add upstream https://github.com/sorin-ionescu/prezto.git
+
+Fetch the latest changes, merge them and update submodules.
+
+    git fetch upstream && git merge upstream/master && git submodule update --init --recursive
 
 Usage
 -----
