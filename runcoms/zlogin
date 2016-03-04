@@ -25,3 +25,5 @@ fi
 export PGDATA=/usr/local/var/postgres
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
