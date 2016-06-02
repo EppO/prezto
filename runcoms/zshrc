@@ -12,3 +12,13 @@ fi
 
 # Customize to your needs...
 chruby ruby
+
+settitle() {
+    printf "\033k$1\033\\"
+}
+zsh_prompt_command() {
+    prompt_agnoster_pwd
+    settitle "`hostname -s`:${_prompt_agnoster_pwd}"
+}
+
+precmd() { zsh_prompt_command }
